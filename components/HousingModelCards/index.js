@@ -9,7 +9,7 @@ export default function HousingModelCards({ count }) {
     axios.get("/housing_models").then((res) => {
       setHousingModels(res.data.data.splice(0, count));
     });
-  }, []);
+  }, [count]);
 
   return (
     <div>

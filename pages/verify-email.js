@@ -11,16 +11,19 @@ export default function VerifyEmail() {
   const { url } = router.query;
   const token = store.get("token");
 
-  useEffect(() => {
-    url &&
-      token &&
-      axios
-        .get(url, { headers: { Authorization: `Bearer ${token}` } })
-        .then((res) => {
-          toast.success("Email verified successfully");
-          router.replace("/");
-        });
-  }, [url, token]);
+  useEffect(
+    (router) => {
+      url &&
+        token &&
+        axios
+          .get(url, { headers: { Authorization: `Bearer ${token}` } })
+          .then((res) => {
+            toast.success("Email verified successfully");
+            router.replace("/");
+          });
+    },
+    [url, token]
+  );
 
   return (
     <>
