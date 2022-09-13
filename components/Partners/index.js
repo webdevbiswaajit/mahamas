@@ -1,7 +1,6 @@
 import Marquee from "react-fast-marquee";
 import Image from "next/image";
-import Card from "./card";
-// import Marquee from "react-fast-marquee";
+
 import styles from "./styles.module.css";
 
 export default function Partners() {
