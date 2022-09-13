@@ -1,0 +1,20 @@
+.partners {
+  padding: 25px 0;
+}
+
+.partners img {
+  height: 80px;
+  margin: 0 50px;
+}
+
+.gap {
+  margin-right: 30px;
+}
+
+.marquee span {
+  margin: 20px !important;
+}
+
+.marquee span span img {
+  margin: 20px !important;
+}

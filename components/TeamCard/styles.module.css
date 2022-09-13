@@ -1,0 +1,26 @@
+.card {
+  width: 350px;
+  height: 360px;
+  background: white;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img {
+  width: 230px;
+  height: 240px;
+  margin-top: -20px;
+}
+
+.content {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.content h6,
+.content p {
+  margin: 0;
+  padding: 0;
+}
